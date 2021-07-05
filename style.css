@@ -1,7 +1,12 @@
 *{ padding:0px; margin:0px ;box-sizing: border-box;}
+
 #box1>#ParteJogador>div>img,#box1>#PartePc>div>img{
   border: 1px solid;
   width: 200px;
+}
+
+#box1>#ParteJogador>div>img:hover{
+   transform:none;
 }
 
 section{
@@ -11,6 +16,7 @@ section{
 #box1{
     display: flex;
     justify-content:space-evenly;
+    align-items: center;
 }
 
 #temporizador{
@@ -27,8 +33,9 @@ section{
 }
 
 .pontos{
-display: flex;
-justify-content: center;
-border-radius: 50%;
-align-items: center;
+   height: max-content;
+   font-size: 25px;
+   border-radius: 70%;
+   border: 1px solid;
+   padding:7px 15px;
 }

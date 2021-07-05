@@ -13,20 +13,20 @@
 
     <section id="box1">
       <div id="ParteJogador">
-         <div>
+         <div id="mao-jog" onclick="PegaID('mao-jog')">
            <img src="Imagens/Mao_Jogador.png">
           </div>
 
-         <div>
+         <div id="pedra-jog" onclick="PegaID('pedra-jog')">
            <img src="Imagens/Pedra_Jogador.png">
           </div>
 
-         <div>
+         <div id="tesoura-jog" onclick="PegaID('tesoura-jog')">
            <img src="Imagens/Tesoura_Jogador.png">
           </div>
       </div>
 
-      <div class="pontos" id="PontuacaoA">3</div>
+      <div class="pontos" id="PontuacaoA">0</div>
       <div id="temporizador">
     
          <div id="tempo">
@@ -35,24 +35,25 @@
     
       </div> 
      
-      <div class="pontos" id="PontuacaoB">2</div>
+      <div class="pontos" id="PontuacaoB">0</div>
 
       <div id="PartePc">
-        <div>
+        <div id="mao-pc">
           <img src="Imagens/Mao_PC.png">
          </div>
 
-         <div>
+         <div id="pedra-pc">
           <img src="Imagens/Pedra_PC.png">
          </div>
 
-        <div>
+        <div id="tesoura-pc">
           <img src="Imagens/Tesoura_Pc.png">
          </div>
 
   
       </div>
     </section>
-  
+    <div id="num">Numero</div>
+     <button id="btn" onclick="inicia()">Comecar</button>
 </body>
 </html>
