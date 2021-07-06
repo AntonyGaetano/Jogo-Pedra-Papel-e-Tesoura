@@ -52,8 +52,10 @@ num = Math.floor(Math.random() * (max - min)) + min;
 
 nome2[num].style.transform="scale(1.3)";
 
+
 var nomePC = vetor_Pc2[num];
 var nomeJog = ID;
+
 
 var divjogA = document.getElementById("PontuacaoA");
 var divjogB = document.getElementById("PontuacaoB");
