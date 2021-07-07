@@ -4,6 +4,7 @@
 body{
 display: flex;
 flex-direction: column;
+background-image: url(Imagens/fundo.jpg);
 }
 
 #box1>#ParteJogador>div>img,#box1>#PartePc>div>img{
@@ -12,9 +13,6 @@ flex-direction: column;
   margin-top: 4px;
 }
 
-#box1>#ParteJogador>div>img:hover{
-   transform:none;
-}
 
 section{
     width: 60%;
@@ -24,23 +22,36 @@ section{
 #box1{
     margin-top: 6.6rem;
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
     align-items: center;
+    background-color:#B0E0E6;
+    
 }
 
 #temporizador{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+h4{
+    margin-top: -130px;
+    margin-bottom: 70px;
+    text-align: center;
+    font-size: 22px;
+    font-family: cursive;
 }
 
 #tempo{
     height: max-content;
     width: max-content;
-    border:1px solid;
+    border:2px solid white;
+    background-color: red;
+    color:white;
     padding: 1rem 1.4rem;
     font-size: 17px;
     font-family: cursive;
+    box-shadow: 2px 2px 2px black;
 }
 
 .pontos{
@@ -55,9 +66,10 @@ section{
   width: 12rem;
   margin:1rem auto;
   padding: 1rem;
-  font-size: 14px;
+  font-size: 18px;
+  background-color: red;
   color:white;
-  background-color: black;
+  font-family: fantasy;
   border-radius: 8px;
 }
 
@@ -67,6 +79,7 @@ section{
 
 #PartePc{
     background-color: #ffca18;
+    padding:2px 0px;
 }
 
 #PontuacaoB{
