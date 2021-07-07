@@ -74,4 +74,18 @@ else{
 divjogA.innerHTML = pontoA;
 divjogB.innerHTML = pontoB;
 
+
+setTimeout(TirarTrasformPC,930)
+}
+
+function TirarTrasformPC(){
+  var vetor_Pc2 = ["mao-pc","pedra-pc","tesoura-pc","mao-jog","pedra-jog","tesoura-jog"];
+  var nome2 = [];
+
+  
+  for(let i = 0; i < 6; i++){
+   nome2[i] = document.getElementById(vetor_Pc2[i]);
+   nome2[i].style.transform="none";
+  }
+
 }
