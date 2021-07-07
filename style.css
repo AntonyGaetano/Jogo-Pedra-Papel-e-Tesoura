@@ -4,7 +4,6 @@
 body{
 display: flex;
 flex-direction: column;
-background-color:
 }
 
 #box1>#ParteJogador>div>img,#box1>#PartePc>div>img{
