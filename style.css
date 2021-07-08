@@ -59,7 +59,7 @@ h4{
    padding:7px 16px;
 }
 
-#btn{
+.btn{
   width: 12rem;
   margin:1rem auto;
   padding: 1rem;
@@ -69,6 +69,12 @@ h4{
   font-family: fantasy;
   border-radius: 8px;
 }
+
+#btn2{
+    display: none;
+}
+
+
 
 #ParteJogador{
     background-color: #0ed145;

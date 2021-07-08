@@ -54,6 +54,12 @@ function Rotate(){
 
 var Rot_cont= 0;
 function inicia(){
+  var botao = document.getElementById("btn");
+  botao.style.display="none"
+
+  var botao2 = document.getElementById("btn2");
+  botao2.style.display="block"
+
   if(Rot_cont == 0){
   setTimeout(Rotate,200);
   Rot_cont++;
@@ -114,4 +120,8 @@ function TirarTrasformPC(){
    nome2[i].style.transform="none";
   }
 
+}
+
+function Recomecar(){
+  location.reload();
 }
