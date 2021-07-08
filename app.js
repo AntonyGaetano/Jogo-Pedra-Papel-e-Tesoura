@@ -24,9 +24,18 @@ var div = document.getElementById("tempo");
 div.innerHTML = "00:0" + tempo;
 if(tempo == 0){
   clearInterval(tmp);
+  if(pontoA < 4 && pontoB < 4){
   Jogar();
   tempo=6;
   setTimeout(inicia,1000);
+  }
+  else{
+     if(pontoA == 4){
+       alert("Parabéns! Você Venceu");
+     }else{
+       alert("Você Perdeu! Tente Novamente");
+     }
+  }
 }
 tempo--;
 }

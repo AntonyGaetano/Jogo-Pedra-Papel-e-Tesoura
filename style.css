@@ -14,18 +14,16 @@ background-image: url(Imagens/fundo.jpg);
 }
 
 
-section{
-    width: 60%;
-    margin: auto;
-}
 
 #box1{
+    width: 60%;
+    margin: auto;
     margin-top: 6.6rem;
     display: flex;
     justify-content:space-between;
     align-items: center;
     background-color:#B0E0E6;
-    
+    border-radius: 30px;
 }
 
 #temporizador{
@@ -75,11 +73,13 @@ h4{
 
 #ParteJogador{
     background-color: #0ed145;
+    border-right: 2px dotted;
 }
 
 #PartePc{
     background-color: #ffca18;
     padding:2px 0px;
+    border-left: 2px dotted;
 }
 
 #PontuacaoB{
@@ -102,9 +102,32 @@ p{
     position: absolute;
     left: 36.8%;
     top: 32%;
-    background-color: sienna;
     padding: 5px 5rem;
     border-bottom-right-radius: 14px;
     border-top-left-radius: 14px;
+    animation-name: RodaConfronto;
+    animation-duration: 1s;
     display: none;
+}
+
+@keyframes RodaConfronto {
+    0%{
+        
+        transform: rotate(-25deg);
+    }
+
+    40%{
+        transform: scale(1.5);
+       
+    }
+
+    60%{
+        transform: rotate(-15deg);
+    }
+
+    100%{
+        transform: scale(1);
+        
+    }
+    
 }
