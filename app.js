@@ -22,6 +22,10 @@ tag.style.transform="scale(1.3)";
 function Tempo(){
 var div = document.getElementById("tempo");
 div.innerHTML = "00:0" + tempo;
+
+var div = document.getElementById("confronto");
+div.style.display="none";
+
 if(tempo == 0){
   clearInterval(tmp);
   if(pontoA < 4 && pontoB < 4){
@@ -40,7 +44,20 @@ if(tempo == 0){
 tempo--;
 }
 
+function Rotate(){
+  var div = document.getElementById("confronto");
+  div.style.display="block";
+  div.style.animationName="RodaConfronto";
+  div.style.animationDuration="1s";
+  div.style.animationIterationCount="2";
+}
+
+var Rot_cont= 0;
 function inicia(){
+  if(Rot_cont == 0){
+  setTimeout(Rotate,200);
+  Rot_cont++;
+  }
   tmp = setInterval(Tempo,800);
 }
 
