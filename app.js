@@ -35,11 +35,11 @@ if(tempo == 0){
   }
   else{
     var venceu = document.getElementById("Venceu");
-
+    var perdeu = document.getElementById("perdeu")
      if(pontoA == 4){
         venceu.style.display="block";
      }else{
-      venceu.style.display="block";
+      perdeu.style.display="block";
      }
   }
 }

@@ -90,7 +90,7 @@ h4{
   
   #PartePc{
       background-color: #ffca18;
-      padding:2px 0px;
+      padding:4px 0px;
       padding-left: 3px;
       border-left: 2px dotted;
       margin-left: 11px;
@@ -154,12 +154,42 @@ font-weight: 500;
 position: absolute;
 width: 300px;
 height: 140px;
-/*background-image: url(Imagens/venceu.jpg); 
-background-repeat: no-repeat;
-background-size: contain; */
-left: 28%;
+left: 25%;
+top: 25%;
 display: none;
+
+animation-name: venceu_perdeu;
+animation-duration: 1.2s;
+animation-iteration-count: 2;
 }
+
+#perdeu{
+    position: absolute;
+width: 300px;
+height: 140px;
+left: 25%;
+top: 25%;
+display: none;
+
+animation-name: venceu_perdeu;
+animation-duration: 1.2s;
+animation-iteration-count: 2;
+}
+
+@keyframes venceu_perdeu{
+    0%{
+       transform: rotate(-10deg);
+    }
+
+    50%{
+transform: rotate(15deg);
+    }
+
+    100%{
+      transform: rotate(0dg);
+    }
+}
+
 
 @keyframes RodaConfronto {
     0%{
