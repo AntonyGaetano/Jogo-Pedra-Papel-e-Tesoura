@@ -1,0 +1,214 @@
+
+
+*{ padding:0px; margin:0px ;box-sizing: border-box;}
+
+body{
+display: flex;
+flex-direction: column;
+background-image: url(Imagens/fundo.jpg);
+justify-content: center;
+}
+
+#box1>#ParteJogador>div>img,#box1>#PartePc>div>img{
+  width:80px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+#box1{
+    width:76%;
+    margin: auto;
+    margin-top: 4rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color:#B0E0E6;
+}
+
+
+#temporizador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h4{
+    margin-top: -64px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-family: cursive;
+    color:red;
+}
+
+#tempo{
+    height: max-content;
+    width: max-content;
+    border:2px solid white;
+    background-color: red;
+    color:white;
+    padding: .6rem 1rem;
+    font-size: 14px;
+    font-family: cursive;
+    box-shadow: 2px 2px 2px black;
+}
+
+.pontos{
+   text-align: center;
+   height: max-content;
+   font-size: 18px;
+   border-radius: 50%;
+   border: 1px solid;
+   padding: 10px 4px;
+}
+
+.btn{
+    width: 17%;
+    overflow: hidden;
+    margin:1.4rem auto;
+    padding: .5rem;
+    font-size: 16px;
+    background-color: red;
+    color:white;
+    font-family: fantasy;
+    border-radius: 8px;
+  }
+  
+  #btn2{
+      display: none;
+  }
+  
+  
+  #ParteJogador{
+      background-color: #0ed145;
+      border-right: 2px dotted;
+      padding-right: 3px;
+      margin-right: 11px;
+  }
+  
+  #PartePc{
+      background-color: #ffca18;
+      padding:2px 0px;
+      padding-left: 3px;
+      border-left: 2px dotted;
+      margin-left: 11px;
+  }
+  
+  #PontuacaoB{
+      background-color: #ffca18;
+      font-size: 20px;
+      font-family: cursive;
+  }
+  
+  #PontuacaoA{
+      background-color: #0ed145;
+      font-size: 20px;
+      font-family: cursive;
+  }
+  
+  p{
+      font-family: cursive;
+  }
+
+  #confronto{
+    position: absolute;
+    left: 24%;
+    top: 15%;
+    padding: 5px 5rem;
+    border-bottom-right-radius: 14px;
+    border-top-left-radius: 14px;
+  
+    display: none;
+}
+
+#box1{
+    display: flex;
+}
+
+#tela{
+    background-color:tomato;
+    padding: 1.4rem .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#tela>p, #tela>h3{
+    margin: 1rem 0px;
+    font-family: cursive;
+}
+
+#tela>p{
+    color:white;
+}
+
+#tela>h3{
+font-weight: 500;
+}
+
+#Venceu{
+position: absolute;
+width: 300px;
+height: 140px;
+/*background-image: url(Imagens/venceu.jpg); */
+background-repeat: no-repeat;
+background-size: contain;
+left: 28%;
+display: none;
+}
+
+@keyframes RodaConfronto {
+    0%{
+        
+        transform: rotate(-25deg);
+    }
+
+    40%{
+        transform: scale(1.5);
+       
+    }
+
+    60%{
+        transform: rotate(-15deg);
+    }
+
+    100%{
+        transform: scale(1);
+        
+    }
+    
+}
+
+@media screen and (orientation:portrait){
+    #box1{
+        display: none;
+    }
+
+    #Venceu{
+        display: none;
+    }
+
+    #tela{
+        display: flex;
+        margin-top: 6rem;
+        border: 1px solid white;
+    }
+
+    #btn{
+        display:none;
+    }
+
+    #btn2{
+       background-color: black;
+    }
+}
+
+@media screen and (orientation:landscape){
+  #box1{
+      display: flex;
+  }
+   #tela{display: none;
+   }
+} 

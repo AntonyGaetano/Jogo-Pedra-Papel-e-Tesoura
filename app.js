@@ -35,9 +35,14 @@ if(tempo == 0){
   }
   else{
      if(pontoA == 4){
-       alert("Parabéns! Você Venceu");
+       var venceu = document.getElementById("Venceu");
+       venceu.style.display="block";
+       venceu.style.backgroundImage="url(Imagens/venceu.jpg);"
      }else{
        alert("Você Perdeu! Tente Novamente");
+       var venceu = document.getElementById("Venceu");
+       venceu.style.display="block";
+       venceu.style.backgroundImage="url(Imagens/perdeu.jpg);"
      }
   }
 }
@@ -59,6 +64,7 @@ function inicia(){
 
   var botao2 = document.getElementById("btn2");
   botao2.style.display="block"
+  botao2.style.backgroundColor="blue";
 
   if(Rot_cont == 0){
   setTimeout(Rotate,200);
