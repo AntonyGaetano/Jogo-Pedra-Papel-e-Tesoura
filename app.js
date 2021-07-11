@@ -34,15 +34,12 @@ if(tempo == 0){
   setTimeout(inicia,1000);
   }
   else{
+    var venceu = document.getElementById("Venceu");
+
      if(pontoA == 4){
-       var venceu = document.getElementById("Venceu");
-       venceu.style.display="block";
-       venceu.style.backgroundImage="url(Imagens/venceu.jpg);"
+        venceu.style.display="block";
      }else{
-       alert("Você Perdeu! Tente Novamente");
-       var venceu = document.getElementById("Venceu");
-       venceu.style.display="block";
-       venceu.style.backgroundImage="url(Imagens/perdeu.jpg);"
+      venceu.style.display="block";
      }
   }
 }
