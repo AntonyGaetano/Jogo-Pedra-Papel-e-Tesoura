@@ -21,7 +21,7 @@ background-image: url(Imagens/fundo.jpg);
     justify-content:space-between;
     align-items: center;
     background-color:#B0E0E6;
-    border-radius: 30px;
+    
 }
 
 #temporizador{
@@ -79,11 +79,12 @@ h4{
 #ParteJogador{
     background-color: #0ed145;
     border-right: 2px dotted;
+    padding: 5px 0px;
 }
 
 #PartePc{
     background-color: #ffca18;
-    padding:2px 0px;
+    padding:6px 0px;
     border-left: 2px dotted;
 }
 
